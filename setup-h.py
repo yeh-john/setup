@@ -25,6 +25,7 @@ geany_cmd = 'apt install geany'
 ###--- Start program ---###
 print('Start program...')
 os.system(dir_cmd1)
+time.sleep(1)
 os.system(dir_cmd2)
 
 # Start install ngrok
@@ -35,8 +36,16 @@ if ins_ngrok=='y' or ins_ngrok=='Y':
     time.sleep(1)
     os.system(ngrok_cmd2)
     time.sleep(1)
-    os.system(ngrok_cmd3)
-    os.system(ngrok_cmd4)
+    print("If you don't have authtoken enter 'n'")
+    ngrok_auth = input('Do you have ngrok authtoken [Y/n] ')
+    if ngrok_auth=='Y' or ngrok_auth=='y':
+        ngrok_authtoken = input('Enter ngrok authtoken :')
+        ngrok_myauth = 'ngrok authtoken '+ngrok_authtoken
+        os.system(ngrok_myauth)
+        os.system(ngrok_cmd4)
+    else:
+        os.system(ngrok_cmd3)
+        os.system(ngrok_cmd4)
 else:
     time.sleep(1)
 
