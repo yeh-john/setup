@@ -50,7 +50,7 @@ else:
     time.sleep(1)
 
 # Start install blackeye
-ins_blackeye = input('Do you want to install ngrok [yY/n] ')
+ins_blackeye = input('Do you want to install blackeye [yY/n] ')
 if ins_blackeye=='y' or ins_blackeye=='Y':
     time.sleep(1)
     os.system(blackeye_cmd)
@@ -58,7 +58,7 @@ else:
     time.sleep(1)
 
 # Start install geany
-ins_geany = input('Do you want to install ngrok [Y/n] ')
+ins_geany = input('Do you want to install geany [Y/n] ')
 if ins_geany=='Y' or ins_geany=='y':
     time.sleep(1)
     os.system(geany_cmd)
