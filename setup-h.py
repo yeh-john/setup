@@ -18,6 +18,8 @@ ngrok_cmd3 = 'ngrok authtoken 28yzD7gWELd83qbWNZxncjVLDHC_4tj6yKBYh3wte6RMWqFng'
 ngrok_cmd4 = 'rm -rf *'
 # Install blackeye
 blackeye_cmd = 'git clone https://github.com/thewickedkarma/blackeye-im.git'
+# Install passwd dictionary
+pwdic_cmd = 'wget https://yeh-john.github.io/file/pw-dic/wifi.txt'
 # Install geany
 geany_cmd = 'apt install geany'
 
@@ -50,10 +52,18 @@ else:
     time.sleep(1)
 
 # Start install blackeye
-ins_blackeye = input('Do you want to install blackeye [yY/n] ')
+ins_blackeye = input('Do you want to install blackeye [Y/n] ')
 if ins_blackeye=='y' or ins_blackeye=='Y':
     time.sleep(1)
     os.system(blackeye_cmd)
+else:
+    time.sleep(1)
+    
+# Start install passwd dictionay
+ins_pwdic = input('Do you want to install passwd dictionary [Y/n] ')
+if ins_pwdic=='y' or ins_pwdic=='Y':
+    time.sleep(1)
+    os.system(pwdic_cmd)
 else:
     time.sleep(1)
 
