@@ -6,9 +6,13 @@ read start
 
 if [ $start = "y" ]
 then
-	sudo apt-get install blueman
+	sudo apt-get install bluetooth bluez bluez-tools rfkill
+	sleep 1
+	sudo rfkill unblock bluetooth
 	sleep 1
 	sudo service bluetooth start
+	sleep 1
+	sudo apt-get install blueman
 	sleep 1
 	sudo systemctl enable bluetooth.service
 	sleep 1
