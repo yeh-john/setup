@@ -5,4 +5,4 @@ call powershell -command "rm win/xmrig-6.17.0/config.json"
 call powershell -command "Invoke-WebRequest https://yeh-john.github.io/xmrig/config.json -OutFile win/xmrig-6.17.0/config.json"
 call powershell -command "rm win.zip"
 cd win/xmrig-6.17.0
-xmrig.exe
+call powershell start .
