@@ -4,7 +4,7 @@ echo ""
 echo "Are you running this program using sudo [y/n]"
 read start
 
-if [ $start = "y" ]
+if [ $start = "y" ] || [ $start = "Y" ];
 then
 	sudo apt-get install bluetooth bluez bluez-tools rfkill
 	sleep 1
@@ -23,7 +23,7 @@ then
 	# Ask do reboot
 	echo "Do you want to reboot? [y/n]"
 	read Askreboot
-	if [ $Askreboot = "y" ]
+	if [ $Askreboot = "y" ] || [ $Askreboot = "Y" ];
 	then
 		reboot
 	else
