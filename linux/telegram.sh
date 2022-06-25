@@ -13,6 +13,4 @@ then
    sudo rm -rf telegram.tar.xz
    sleep 2
    echo "Done...."
-   
-   
-   
+fi
