@@ -3,7 +3,7 @@ echo "Start setup Japanese on linux"
 echo ""
 echo "Are you running this program using sudo? [y/n]"
 read start
-if [ $start = "start" ] || [ $start = "Y" ];
+if [ $start = "y" ] || [ $start = "Y" ];
 then
    sudo apt-get install ibus-anthy
    sleep 2
