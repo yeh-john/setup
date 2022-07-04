@@ -3,7 +3,7 @@ echo "Start enable ssh"
 echo ""
 echo "Are you running this program using sudo? [y/n]"
 read start
-if [ $start = "start" ] || [ $start = "Y" ];
+if [ $start = "y" ] || [ $start = "Y" ];
 then
     sleep 1
     sudo apt-get update
