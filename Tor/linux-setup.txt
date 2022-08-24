@@ -20,7 +20,6 @@ Uncomment HiddenServiceDir and Port
 
 HiddenServiceDir /var/lib/tor/hidden_service/
 HiddenServicePort 80 127.0.0.1:80
-
 ##########
 
 # Stop tor service
