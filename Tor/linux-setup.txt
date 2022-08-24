@@ -1,0 +1,37 @@
+# Update system
+sudo apt update
+
+# Install apache2
+sudo apt install apache2
+
+# Restart apache2 service
+sudo service apache2 restart
+
+# Check apache2 service "Check service is active"
+sudo service apache2 status
+
+# Install tor
+sudo apt install tor
+
+# Edit torrc
+sudo nano /etc/tor/torrc
+##########
+Uncomment HiddenServiceDir and Port
+
+HiddenServiceDir /var/lib/tor/hidden_service/
+HiddenServicePort 80 127.0.0.1:80
+
+##########
+
+# Stop tor service
+sudo service tor stop
+
+# Start tor service
+sudo service tor start
+
+# Check tor service "Check service is active"
+sudo service tor status
+
+# Check tor link
+sudo cat /var/lib/tor/hidden_service/hostname
+
