@@ -16,7 +16,7 @@ sudo apt install tor
 # Edit torrc
 sudo nano /etc/tor/torrc
 ----------
-Uncomment HiddenServiceDir and Port
+* Uncomment HiddenServiceDir and Port
 
 HiddenServiceDir /var/lib/tor/hidden_service/
 HiddenServicePort 80 127.0.0.1:80
