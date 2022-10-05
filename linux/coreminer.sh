@@ -15,6 +15,7 @@ then
    rm -rf ./coreminer-linux-x86_64.tar.gz
    sleep 2
    echo "cb702f743c65bc49cefd3e4ec2626c2bd1921d38c58c" > wallet.txt
+   sleep 2
    echo ""
    echo "---------------------"
    echo ""
