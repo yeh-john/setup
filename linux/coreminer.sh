@@ -14,7 +14,7 @@ then
    sleep 2
    rm -rf ./coreminer-linux-x86_64.tar.gz
    sleep 2
-   echo "Addr: cb702f743c65bc49cefd3e4ec2626c2bd1921d38c58c, Server: as.catchthatrabbit.com, Port: 8008" > wallet.txt
+   echo "Addr: cb702f743c65bc49cefd3e4ec2626c2bd1921d38c58c, Server: as.catchthatrabbit.com, Port: 8008" > info.txt
    sleep 2
    echo ""
    echo "---------------------"
