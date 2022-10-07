@@ -16,6 +16,8 @@ then
    sleep 2
    echo "Addr: cb702f743c65bc49cefd3e4ec2626c2bd1921d38c58c, Server: as.catchthatrabbit.com, Port: 8008" > info.txt
    sleep 2
+   mv ubuntu-latest mine
+   sleep 2
    echo ""
    echo "---------------------"
    echo ""
