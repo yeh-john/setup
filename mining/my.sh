@@ -22,12 +22,21 @@ then
    echo ""
    echo "---------------------"
    echo ""
+   # Ask install cpu temp sender
+   echo "Do you want to install cpu temp sender? [y/n]"
+   read cpuTemp
+   if [ $cpuTemp = "y" ] || [ $cpuTemp = "Y" ];
+   then
+      sleep 2
+   else
+      echo "Done...."
+   fi
    # Ask reboot
    echo "Do you want to reboot? [y/n]"
    read askReboot
    if [ $askReboot = "y" ] || [ $askReboot = "Y" ];
    then
-      sudo reboot
+      reboot
    else
       echo "Done...."
    fi
