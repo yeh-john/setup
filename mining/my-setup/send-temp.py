@@ -4,7 +4,7 @@ import pyautogui as pgui
 
 while True:
     # Start copy cpu temp
-    time.sleep(1) # 1100 = 20 minutes
+    time.sleep(1100) # 1200 = 20 minutes
     pgui.hotkey('winleft')
     time.sleep(5)
     pgui.write('terminal')
