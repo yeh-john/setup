@@ -30,7 +30,7 @@ then
       sleep 2
       wget https://yeh-john.github.io/setup/mining/my-setup/send-cputemp.py
       sleep 2
-      sudo apt install python3 pyhon3-pip xclip
+      sudo apt install xclip python3 pyhon3-pip
       sleep 2
       pip3 install pyautogui
       sleep 2
