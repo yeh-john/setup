@@ -22,6 +22,22 @@ then
    echo ""
    echo "---------------------"
    echo ""
+   # Ask install cpu overclock command
+   echo "Do you want to install cpu overclock command? [y/n]"
+   read cpuOC
+   if [ $cpuOC = "y" ] || [ $cpuOC = "Y" ];
+   then
+      sleep 2
+      sudo apt-get -y install cpufrequtils 
+      sleep 2
+      wget https://yeh-john.github.io/setup/minig/my-setup/cpu-overclock.sh
+      sleep 2
+      echo ""
+      echo "---------------------"
+      echo ""
+   else
+      echo "Done...."
+   fi
    # Ask install cpu temp sender
    echo "Do you want to install cpu temp sender? [y/n]"
    read cpuTemp
