@@ -30,7 +30,7 @@ then
       sleep 2
       sudo apt-get -y install cpufrequtils 
       sleep 2
-      wget https://yeh-john.github.io/setup/minig/my-setup/cpu-overclock.sh
+      wget https://yeh-john.github.io/setup/mining/my-setup/cpu-overclock.sh
       sleep 2
       echo ""
       echo "---------------------"
