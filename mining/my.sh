@@ -28,7 +28,7 @@ then
    if [ $cpuOC = "y" ] || [ $cpuOC = "Y" ];
    then
       sleep 2
-      sudo apt-get -y install cpufrequtils 
+      sudo apt-get -y install cpufrequtils i7z
       sleep 2
       wget https://yeh-john.github.io/setup/mining/my-setup/cpu-overclock.sh
       sleep 2
